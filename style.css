@@ -1,0 +1,150 @@
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Vinyl', cursive;
+font-family: 'Tektur', cursive; */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+ :root{
+    --bg--color:#101113;
+    --text--color:#fff;
+    --main--color:#34e7f8;
+    --other--color:#fcfcfc;
+    --h1-font:6rem;
+    --p-font:1rem;
+    --shop-now:linear
+} 
+.body{
+    background: radial-gradient(#3d3d3d,#1a1a1a,#111111,#111111);
+    width: 100;
+    height: 100%;
+}
+header{
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width:98%;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    color: var(--text--color);
+    font-size:20px;
+    font-weight: bold;
+    align-items: center;
+}
+.icon i{
+    color: var(--main--color);
+    font-size: 25px;
+}
+.ff{
+    display: flex;
+}
+.ff a{
+    margin:  33px;
+    color: var(--text--color);
+    text-decoration: none;
+    font-size: var(--p-font);
+    transition: .55 ease;  
+}
+.ff a:hover{
+    color: var(--main--color);
+}
+.ff a.active{
+    color: var(--main--color);
+}
+.header-icon{
+    display: flex; 
+}
+#menu-icon{
+    font-size: 25px;
+    color: var(--text--color);
+}
+
+.header-icon i{
+    font-size: 25px;
+    color: var(--text--color);
+    margin-right: 12px;
+    transition: .55s ease;
+}
+.header-icon i:hover{
+    transform: translateY(-12px);
+    color: var(--main--color);
+}
+section{
+    margin: 10% 15%;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.img1{
+    width: 400px;
+}
+section h1{
+    font-size: var(--h1-font);
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: 'Tektur', cursive; 
+    margin-bottom: 20px;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 10s linear infinite;
+    /* line-height: 160PX;  */
+}
+@keyframes back{
+    100%{
+        background-position: 400px 0;
+    }
+}
+
+section h5{
+    font-size: var(--p-font);
+    color: var(--text--color);
+    margin-bottom: 30px;
+    transition: .55s ease;
+}
+section h5:hover{
+    transform: translateX(9px);
+    color:burlywood;
+}
+section h3{
+    color: var(--text--color);
+    background: transparent;
+    border: 1px solid ;
+    border-radius: 5px;
+    width: 100px;  
+    padding: 5px;
+    margin-bottom: 20px;
+    transition: .55s ease;
+}
+section h3:hover{
+    background: var(--text--color);
+    color:var(--bg--color);
+}
+section a {
+    margin-top: 20px ;
+    color: var(--text--color);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 1px solid ;
+    padding: 1% 1% ;
+    transition: .55s ease;
+}
+section a::before{
+    
+}
+section a:hover{
+   background: transparent;
+   box-shadow: 0 0 8px ;
+}
