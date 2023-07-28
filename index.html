@@ -54,7 +54,23 @@
 
     </div>
   </section>
-  <!-- icon -->
+  <!-- rows -->
+  <div class="main">
+    <div class="rows">
+      <li><img src="pngwing.com (3).png" onclick="slider('download1.png')"></li>
+    </div>
+    <div class="rows">
+      <li><img src="pngwing.com (2).png" onclick="slider('download2.png')"></li>
+    </div>
+    <div class="rows">
+      <li><img src="pngwing.com (1).png" onclick="slider('download3.png')"></li>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function slider(anything) {
+      document.querySelector('.downld1').src = anything;
+    }
+  </script>
 </body>
 
 </html>
