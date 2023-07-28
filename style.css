@@ -18,12 +18,13 @@ font-family: 'Tektur', cursive; */
     --shop-now:linear
 } 
 .body{
-    background: radial-gradient(#3d3d3d,#1a1a1a,#111111,#111111);
+    background: radial-gradient(50% 50% at 50% ,#4a5157 0%,#101113 90%);
+    /* background: radial-gradient(#3d3d3d,#1a1a1a,#111111,#111111); */
     width: 100;
     height: 100%;
 }
 header{
-    margin-top: 10px;
+    margin-top: 17px;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,13 +35,18 @@ header{
 }
 .icon{
     color: var(--text--color);
-    font-size:20px;
+    font-size:30px;
     font-weight: bold;
     align-items: center;
+    margin-left: 100px;
+    transition: 1s ease;
+}
+.icon:hover{
+    letter-spacing: 2px;
 }
 .icon i{
     color: var(--main--color);
-    font-size: 25px;
+    font-size: 35px;
 }
 .ff{
     display: flex;
@@ -51,16 +57,21 @@ header{
     text-decoration: none;
     font-size: var(--p-font);
     transition: .55 ease;  
+    border-bottom: 1px solid transparent;
 }
 .ff a:hover{
     color: var(--main--color);
+    border-bottom: 1px solid white;
+    border-radius: 10%;
 }
 .ff a.active{
     color: var(--main--color);
 }
 .header-icon{
     display: flex; 
+    margin-right: 60px;
 }
+
 #menu-icon{
     font-size: 25px;
     color: var(--text--color);
@@ -86,9 +97,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr)
 }
-.img1{
-    width: 400px;
-}
+
 section h1{
     font-size: var(--h1-font);
     color: transparent;
@@ -111,10 +120,11 @@ section h5{
     font-size: var(--p-font);
     color: var(--text--color);
     margin-bottom: 30px;
-    transition: .55s ease;
+    transition: .5s ease;
 }
 section h5:hover{
-    transform: translateX(9px);
+    transform: translateX(25px);
+    font-size: 1.1rem;
     color:burlywood;
 }
 section h3{
@@ -141,10 +151,25 @@ section a {
     padding: 1% 1% ;
     transition: .55s ease;
 }
-section a::before{
-    
-}
 section a:hover{
    background: transparent;
    box-shadow: 0 0 8px ;
+}
+.main{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    /* transform: translateY(-50px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: .55s ease;
+}
+
+
+.main li img{ 
+    border-radius: 50%;
+    background: radial-gradient(#a7d9f7,#8cbaf7); 
 }
